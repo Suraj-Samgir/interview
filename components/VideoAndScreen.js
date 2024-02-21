@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Peer } from "peerjs";
 import Questions from "./Questions";
-// import CodeEditorComponent from './CodeEditorComponent';
+import CodeEditorComponent from './CodeEditorComponent';
 
 export default function VideoAndScreen() {
   const [myPeerID, setMyPeerID] = useState(null);
@@ -132,34 +132,26 @@ export default function VideoAndScreen() {
           placeholder="Enter Receiver Peer ID"
           value={receiverID}
           onChange={(e) => setReceiverID(e.target.value)}
-          style={{width:"75%", backgroundColor:"white", outline: "none", padding:"0.5rem", borderRadius:"5px", fontSize:"15px"}}
+          style={{width:"70%", backgroundColor:"white", outline: "none", padding:"0.5rem", borderRadius:"5px", fontSize:"12px", color:"black"}}
         />
-        <button onClick={callTheReceiver} style={{width:"20%",padding:"0.5rem", fontSize:"15px", fontWeight:"600",backgroundColor:"teal", border:"none", outline:"none", borderRadius:"5px"}}>Call</button>
+        <button onClick={callTheReceiver} style={{width:"25%",padding:"0.5rem", fontSize:"15px", fontWeight:"600",backgroundColor:"teal", border:"none", outline:"none", borderRadius:"5px"}}>Call</button>
         </div>
-        {/* <div style={{display: "flex", justifyContent:"space-between",alignItems:"center" , width:"100%"}}>
+        <div style={{display: "flex", justifyContent:"space-between",alignItems:"center" , width:"100%"}}>
         <input
           type="text"
           placeholder="Enter Receiver Screen ID"
           onChange={(e) => setScreenID(e.target.value)}
-          style={{width:"75%", backgroundColor:"white", outline: "none", padding:"0.5rem", borderRadius:"5px"}}
+          style={{width:"70%", backgroundColor:"white", outline: "none", padding:"0.5rem", borderRadius:"5px", fontSize:"12px", color:"black"}}
         />
-        <button onClick={shareScreen} style={{width:"20%",padding:"0.5rem", fontSize:"15px", fontWeight:"600",backgroundColor:"teal", border:"none", outline:"none", borderRadius:"5px"}}>Share</button>
-        </div> */}
+        <button onClick={shareScreen} style={{width:"25%",padding:"0.5rem", fontSize:"15px", fontWeight:"600",backgroundColor:"teal", border:"none", outline:"none", borderRadius:"5px"}}>Share</button>
+        </div> 
 
       </div>
 
       <div style={{display:"flex", width:"100%" }} className="p-2 gap-2">
-      {/* <div className="CodeEditor" style={{width:"100%"}} >
+      <div className="CodeEditor" style={{width:"100%"}} >
         <CodeEditorComponent />
-      </div> */}
-      <div className="w-full flex flex-col p-2 gap-2 h-full">
-        <div className="h-full border-2 border-black">
-            code editor
-        </div>
-        <div className="h-full border-2 border-black">
-            input and output
-        </div>
-      </div>
+      </div> 
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
         <Questions/>
         <main style={{ display: "flex", flexDirection: "column", position : "relative", marginTop:"1rem"}}>
