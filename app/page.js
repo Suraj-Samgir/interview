@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <NavBar />
       <IntoBanner />
-      <Card title="Enter Title Here" desc="Enter description" buttontext="Button Text"/>
+      <Card title="Enter Title Here" desc="Enter description" button1text="Generate" button2text="Join"/>
 
     </>
   );
