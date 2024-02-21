@@ -10,10 +10,9 @@ export default function page(){
 
     return (
         <>
-            
+          <div className='w-full h-full bg-dark'>
             <VideoAndScreen/>
-            {/* <Questions/> */}
-            {/* <CodeEditorComponent/> */}
+          </div>  
         </>
     )
 }
