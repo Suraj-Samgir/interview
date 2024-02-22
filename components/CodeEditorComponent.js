@@ -12,9 +12,8 @@ export default function CodeEditorComponent(){
   const editorRef = useRef(null);
   const [langID,setLangID] = useState(null);
   const [inputData,setInputData] = useState(null);//to handle the input options
-  const[myEditor,setMyEditor] = useState(null)
-  const[outputData,setOutputData] = useState("")
-
+  const [myEditor,setMyEditor] = useState(null)
+  const [outputData,setOutputData] = useState("")
 
   useEffect(() => {
     const editor = CodeMirror.fromTextArea(editorRef.current, {
