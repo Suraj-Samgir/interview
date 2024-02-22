@@ -1,10 +1,10 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
-import '@codemirror/lib/codemirror.css';
-import '@codemirror/mode/clike/clike';
-import '@codemirror/mode/python/python';
-import '@codemirror/theme/dracula.css';
 import CodeMirror from 'codemirror';
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/mode/clike/clike';
+import 'codemirror/mode/python/python';
+import 'codemirror/theme/dracula.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios'
 
@@ -105,9 +105,9 @@ export default function CodeEditorComponent(){
   };
 
   return (
-    <div className="row my-5 p-5 h-100">
-      <div className="col">
-        <div className="d-flex justify-content-between mb-2 bg-dark rounded p-2">
+    <div className="row p-4 h-100 flex flex-col justify-between items-center">
+      <div className="col w-full bg-dark p-2 rounded mb-2">
+        <div className="d-flex justify-content-between mb-2 bg-dark rounded p-2 ">
           <div className="col-12 w-25">
             <label className="visually-hidden" htmlFor="inlineFormSelectPref">
               Preference
@@ -141,7 +141,7 @@ export default function CodeEditorComponent(){
           ref={editorRef}
         ></textarea>
       </div>
-      <div className="col d-flex flex-column rounded bg-dark px-4 ">
+      <div className="col d-flex flex-column rounded bg-dark px-4 w-full">
         <div className="h-50">
           <label htmlFor="Input" className="text-light mt-4 mb-2">
             Input

@@ -2,6 +2,20 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function Card(props) {
+  const [showForm, setShowForm] = useState(false);
+
+  const showInput = () => {
+    // setShowForm(true);
+    if(showForm)
+    {
+      setShowForm(false);
+    }
+    else
+    {
+      setShowForm(true);
+    }
+  };
+
   return (
     <>
       <div className="flex flex-col  p-6 bg-slate-50 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -19,5 +33,5 @@ export default function Card(props) {
       </div>
 
     </>
-  )
+  );
 }
