@@ -22,7 +22,7 @@ export default function Home() {
 
         <Card title="Full Stack Development" desc="This interview includes questions on Full Stack Development. Cover all the topics of Full Stack Development and get ready for the interviews." buttontext="Practice Now" isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        <Card title="Machine Learning" desc="This interview includes questions on Machine Learning. Cover all the topics of Machine Learning and get ready for the interviews." buttontext="Practice Now" />
+        <Card title="Machine Learning" desc="This interview includes questions on Machine Learning. Cover all the topics of Machine Learning and get ready for the interviews." buttontext="Practice Now"  isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
 
       {
